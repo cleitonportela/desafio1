@@ -25,15 +25,12 @@ int main() {
         scanf("%d", &menu);
 
         if (menu == 1){
-            
-            if(armario&&)
 
-
-            srand (time(NULL));
-            do {
-                alocar = rand() % 8;
-            } while (armario & (1 << alocar));
-            armario |= (1 << alocar);
+                srand (time(NULL));
+                do {
+                    alocar = rand() % 8;
+                } while (armario & (1 << alocar));
+                armario |= (1 << alocar);
             
         } else if (menu == 2){
         
