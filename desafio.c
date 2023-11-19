@@ -29,6 +29,7 @@ int main() {
 
         if (menu == 1){
 
+<<<<<<< HEAD
             if(armario == 255){
                 puts("Todos os armários já estão ocupados");
             } else {
@@ -37,6 +38,13 @@ int main() {
                   } while (armario & (1 << alocar));
                  armario |= (1 << alocar);
             }
+=======
+                srand (time(NULL));
+                do {
+                    alocar = rand() % 8;
+                } while (armario & (1 << alocar));
+                armario |= (1 << alocar);
+>>>>>>> 3c0c99249d0658d79d36a6f76ab1e435924f2194
             
         } else if (menu == 2){
         
